@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1000001000000000000001 /* MediaEnhancerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000002000000000000001 /* MediaEnhancerApp.swift */; };
+		B1000003000000000000001 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000004000000000000001 /* MainView.swift */; };
+		B1000005000000000000001 /* MediaAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000006000000000000001 /* MediaAsset.swift */; };
+		B1000007000000000000001 /* EnhancementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000008000000000000001 /* EnhancementSettings.swift */; };
+		B1000009000000000000001 /* ExportTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000A000000000000001 /* ExportTask.swift */; };
+		B100000B000000000000001 /* PhotoLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000C000000000000001 /* PhotoLibraryManager.swift */; };
+		B100000D000000000000001 /* ImageEnhancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100000E000000000000001 /* ImageEnhancer.swift */; };
+		B100000F000000000000001 /* VideoEnhancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000010000000000000001 /* VideoEnhancer.swift */; };
+		B1000011000000000000001 /* ExportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000012000000000000001 /* ExportManager.swift */; };
+		B1000013000000000000001 /* PreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000014000000000000001 /* PreviewViewModel.swift */; };
+		B1000015000000000000001 /* ExportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000016000000000000001 /* ExportViewModel.swift */; };
+		B1000017000000000000001 /* MediaPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000018000000000000001 /* MediaPreviewView.swift */; };
+		B1000019000000000000001 /* ControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001A000000000000001 /* ControlPanel.swift */; };
+		B100001B000000000000001 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B100001C000000000000001 /* ExportSheet.swift */; };
+		B100001D000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B100001E000000000000001 /* Assets.xcassets */; };
+		B100001F000000000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1000020000000000000001 /* Preview Assets.xcassets */; };
+		B1000021000000000000001 /* MediaEnhancerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000022000000000000001 /* MediaEnhancerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1000023000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1000024000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1000025000000000000001;
+			remoteInfo = MediaEnhancer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1000026000000000000001 /* MediaEnhancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaEnhancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000027000000000000001 /* MediaEnhancerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaEnhancerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1000002000000000000001 /* MediaEnhancerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaEnhancerApp.swift; sourceTree = "<group>"; };
+		B1000004000000000000001 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B1000006000000000000001 /* MediaAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAsset.swift; sourceTree = "<group>"; };
+		B1000008000000000000001 /* EnhancementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancementSettings.swift; sourceTree = "<group>"; };
+		B100000A000000000000001 /* ExportTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportTask.swift; sourceTree = "<group>"; };
+		B100000C000000000000001 /* PhotoLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryManager.swift; sourceTree = "<group>"; };
+		B100000E000000000000001 /* ImageEnhancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEnhancer.swift; sourceTree = "<group>"; };
+		B1000010000000000000001 /* VideoEnhancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEnhancer.swift; sourceTree = "<group>"; };
+		B1000012000000000000001 /* ExportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportManager.swift; sourceTree = "<group>"; };
+		B1000014000000000000001 /* PreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewModel.swift; sourceTree = "<group>"; };
+		B1000016000000000000001 /* ExportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewModel.swift; sourceTree = "<group>"; };
+		B1000018000000000000001 /* MediaPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewView.swift; sourceTree = "<group>"; };
+		B100001A000000000000001 /* ControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
+		B100001C000000000000001 /* ExportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheet.swift; sourceTree = "<group>"; };
+		B100001E000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1000020000000000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1000022000000000000001 /* MediaEnhancerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaEnhancerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1000028000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1000029000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B100002A000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				B100002B000000000000001 /* MediaEnhancer */,
+				B100002C000000000000001 /* MediaEnhancerTests */,
+				B100002D000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B100002D000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1000026000000000000001 /* MediaEnhancer.app */,
+				B1000027000000000000001 /* MediaEnhancerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B100002B000000000000001 /* MediaEnhancer */ = {
+			isa = PBXGroup;
+			children = (
+				B1000002000000000000001 /* MediaEnhancerApp.swift */,
+				B100002E000000000000001 /* Views */,
+				B100002F000000000000001 /* ViewModels */,
+				B100003000000000000001 /* Models */,
+				B1000031000000000000001 /* Services */,
+				B100001E000000000000001 /* Assets.xcassets */,
+				B1000032000000000000001 /* Preview Content */,
+			);
+			path = MediaEnhancer;
+			sourceTree = "<group>";
+		};
+		B100002E000000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1000004000000000000001 /* MainView.swift */,
+				B1000018000000000000001 /* MediaPreviewView.swift */,
+				B100001A000000000000001 /* ControlPanel.swift */,
+				B100001C000000000000001 /* ExportSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B100002F000000000000001 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1000014000000000000001 /* PreviewViewModel.swift */,
+				B1000016000000000000001 /* ExportViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B100003000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1000006000000000000001 /* MediaAsset.swift */,
+				B1000008000000000000001 /* EnhancementSettings.swift */,
+				B100000A000000000000001 /* ExportTask.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1000031000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B100000C000000000000001 /* PhotoLibraryManager.swift */,
+				B100000E000000000000001 /* ImageEnhancer.swift */,
+				B1000010000000000000001 /* VideoEnhancer.swift */,
+				B1000012000000000000001 /* ExportManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B1000032000000000000001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B1000020000000000000001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B100002C000000000000001 /* MediaEnhancerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1000022000000000000001 /* MediaEnhancerTests.swift */,
+			);
+			path = MediaEnhancerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1000025000000000000001 /* MediaEnhancer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1000033000000000000001 /* Build configuration list for PBXNativeTarget "MediaEnhancer" */;
+			buildPhases = (
+				B1000034000000000000001 /* Sources */,
+				B1000028000000000000001 /* Frameworks */,
+				B1000035000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaEnhancer;
+			productName = MediaEnhancer;
+			productReference = B1000026000000000000001 /* MediaEnhancer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1000036000000000000001 /* MediaEnhancerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1000037000000000000001 /* Build configuration list for PBXNativeTarget "MediaEnhancerTests" */;
+			buildPhases = (
+				B1000038000000000000001 /* Sources */,
+				B1000029000000000000001 /* Frameworks */,
+				B1000039000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B100003A000000000000001 /* PBXTargetDependency */,
+			);
+			name = MediaEnhancerTests;
+			productName = MediaEnhancerTests;
+			productReference = B1000027000000000000001 /* MediaEnhancerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1000024000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B1000025000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B1000036000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B1000025000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = B100003B000000000000001 /* Build configuration list for PBXProject "MediaEnhancer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B100002A000000000000001;
+			productRefGroup = B100002D000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1000025000000000000001 /* MediaEnhancer */,
+				B1000036000000000000001 /* MediaEnhancerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1000035000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B100001F000000000000001 /* Preview Assets.xcassets in Resources */,
+				B100001D000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1000039000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1000034000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000001000000000000001 /* MediaEnhancerApp.swift in Sources */,
+				B1000003000000000000001 /* MainView.swift in Sources */,
+				B1000005000000000000001 /* MediaAsset.swift in Sources */,
+				B1000007000000000000001 /* EnhancementSettings.swift in Sources */,
+				B1000009000000000000001 /* ExportTask.swift in Sources */,
+				B100000B000000000000001 /* PhotoLibraryManager.swift in Sources */,
+				B100000D000000000000001 /* ImageEnhancer.swift in Sources */,
+				B100000F000000000000001 /* VideoEnhancer.swift in Sources */,
+				B1000011000000000000001 /* ExportManager.swift in Sources */,
+				B1000013000000000000001 /* PreviewViewModel.swift in Sources */,
+				B1000015000000000000001 /* ExportViewModel.swift in Sources */,
+				B1000017000000000000001 /* MediaPreviewView.swift in Sources */,
+				B1000019000000000000001 /* ControlPanel.swift in Sources */,
+				B100001B000000000000001 /* ExportSheet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1000038000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1000021000000000000001 /* MediaEnhancerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B100003A000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1000025000000000000001 /* MediaEnhancer */;
+			targetProxy = B1000023000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B100003C000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B100003D000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B100003E000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediaEnhancer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要访问相册以导入本地图片和视频文件进行媒体增强处理，所有处理均在本地离线完成。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要将增强后的图片和视频保存到相册。";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.enhancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B100003F000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MediaEnhancer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "需要访问相册以导入本地图片和视频文件进行媒体增强处理，所有处理均在本地离线完成。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "需要将增强后的图片和视频保存到相册。";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.enhancer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B100004000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.enhancerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaEnhancer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MediaEnhancer";
+			};
+			name = Debug;
+		};
+		B1000041000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.media.enhancerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediaEnhancer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MediaEnhancer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B100003B000000000000001 /* Build configuration list for PBXProject "MediaEnhancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B100003C000000000000001 /* Debug */,
+				B100003D000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1000033000000000000001 /* Build configuration list for PBXNativeTarget "MediaEnhancer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B100003E000000000000001 /* Debug */,
+				B100003F000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1000037000000000000001 /* Build configuration list for PBXNativeTarget "MediaEnhancerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B100004000000000000001 /* Debug */,
+				B1000041000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1000024000000000000001 /* Project object */;
+}
