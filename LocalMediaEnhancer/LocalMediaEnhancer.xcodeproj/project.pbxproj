@@ -22,7 +22,7 @@
 		A1000019000000000000001 /* ExportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A000000000000001 /* ExportViewModel.swift */; };
 		A100001B000000000000001 /* MediaPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001C000000000000001 /* MediaPreviewView.swift */; };
 		A100001D000000000000001 /* FloatingControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001E000000000000001 /* FloatingControlPanel.swift */; };
-		A100001F000000000000001 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100002000000000000001 /* ExportSheet.swift */; };
+		A100001F000000000000001 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000020000000000000001 /* ExportSheet.swift */; };
 		A1000021000000000000001 /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000022000000000000001 /* ErrorAlert.swift */; };
 		A1000023000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000024000000000000001 /* Assets.xcassets */; };
 		A1000025000000000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000026000000000000001 /* Preview Assets.xcassets */; };
@@ -158,7 +158,7 @@
 			children = (
 				A100000C000000000000001 /* PhotoLibraryManager.swift */,
 				A100000E000000000000001 /* ImageEnhancer.swift */,
-				A100001000000000000001 /* VideoEnhancer.swift */,
+				A1000010000000000000001 /* VideoEnhancer.swift */,
 				A1000012000000000000001 /* VideoFrameDecoder.swift */,
 				A1000014000000000000001 /* MetalRenderer.swift */,
 				A1000016000000000000001 /* ExportManager.swift */,
@@ -372,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

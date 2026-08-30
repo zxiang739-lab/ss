@@ -120,9 +120,14 @@ struct ExportSheet: View {
         }
         .padding(14)
         .background {
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(.ultraThinMaterial)
-                .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+            if #available(iOS 26.0, *) {
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+            } else {
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(.ultraThinMaterial)
+            }
         }
     }
 
@@ -193,9 +198,14 @@ struct ExportSheet: View {
                 }
                 .padding(20)
                 .background {
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(.ultraThinMaterial)
-                        .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    if #available(iOS 26.0, *) {
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                            .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    } else {
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                    }
                 }
             } else {
                 // 处理中
@@ -219,9 +229,14 @@ struct ExportSheet: View {
                 }
                 .padding(20)
                 .background {
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
-                        .fill(.ultraThinMaterial)
-                        .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    if #available(iOS 26.0, *) {
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                            .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+                    } else {
+                        RoundedRectangle(cornerRadius: 16, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                    }
                 }
             }
         }

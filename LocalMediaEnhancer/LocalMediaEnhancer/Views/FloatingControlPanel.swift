@@ -138,10 +138,15 @@ struct FloatingControlPanel: View {
         // iOS 26 Liquid Glass 材质背景
         // 参考: https://developer.apple.com/documentation/swiftui/view/glassbackgroundeffect()
         .background {
-            RoundedRectangle(cornerRadius: 20, style: .continuous)
-                .fill(.ultraThinMaterial)
-                // iOS 26 液态玻璃效果
-                .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+            if #available(iOS 26.0, *) {
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    // iOS 26 液态玻璃效果
+                    .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+            } else {
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .fill(.ultraThinMaterial)
+            }
         }
         .overlay {
             RoundedRectangle(cornerRadius: 20, style: .continuous)

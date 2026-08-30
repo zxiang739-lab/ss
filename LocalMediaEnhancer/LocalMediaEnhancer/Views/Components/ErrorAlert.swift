@@ -77,9 +77,14 @@ struct ErrorBanner: View {
         }
         .padding(12)
         .background {
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(.ultraThinMaterial)
-                .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            if #available(iOS 26.0, *) {
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(.ultraThinMaterial)
+                    .glassBackgroundEffect(in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+            } else {
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(.ultraThinMaterial)
+            }
         }
         .overlay {
             RoundedRectangle(cornerRadius: 12, style: .continuous)
